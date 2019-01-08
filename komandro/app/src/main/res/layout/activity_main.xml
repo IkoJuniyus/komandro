@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="pilih satu" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupNb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:id="@+id/Lb"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="laki-laki" />
+
+
+        <RadioButton
+            android:id="@+id/Pb"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="perempuan" />
+
+    </RadioGroup>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tinggi Badan"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:id="@+id/kltinggi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berat Badan"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:textSize="14sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:id="@+id/klberat"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hitung"
+                android:id="@+id/btnkal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/btnreset"/>
+
+            <TextView
+                android:id="@+id/hasilukur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorPrimary2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/hasilukur1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimary2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+</LinearLayout>
